@@ -1,0 +1,380 @@
+/****** RESET *******/
+* {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/****** ROOT *******/
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --farbe-anthrazit: #161B1F;
+  --farbe-anthrazit-hell: #212A30;
+  --farbe-tiefschwarz: #0F1316;
+  --farbe-neongruen: #D6FF45;
+  --farbe-papierweiss: #F2F5EF;
+  --farbe-sekundaer: #AAB3AE;
+  --farbe-rahmen: #2F383E;
+
+  --seitenrand: 120px;
+  --abstand-section: 64px;
+  --nav-hoehe: 80px;
+  --radius: 8px;
+}
+
+/****** TYPOGRAPHY *******/
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #161B1F;
+  color: #F2F5EF;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/****** NAV *******/
+header {
+  position: relative;
+  z-index: 50;
+  background-color: #0F1316;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+  min-height: 80px;
+  background-color: #0F1316;
+}
+
+header .navigation img {
+  width: 200px;
+  height: auto;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+
+}
+
+.nav-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 8%;
+  text-decoration: none;
+  color: var(--farbe-papierweiss);
+}
+
+.nav-links a.active {
+  color: var(--farbe-neongruen);
+}
+
+.nav-links a:hover {
+  color: var(--farbe-neongruen);
+}
+
+.navigation img {
+  width: 200px;
+  height: auto;
+}
+
+.menu-icon .close {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--farbe-papierweiss);
+}
+
+/****** SECTIONS *******/
+
+/* HERO: Standard für alle Unterseiten, Home überschreibt in index.css */
+.hero {
+  background-color: var(--farbe-anthrazit-hell);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  padding: var(--abstand-section) var(--seitenrand);
+  min-height: 560px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 27, 31, 0.6);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.72px;
+  max-width: 880px;
+  color: var(--farbe-papierweiss);
+}
+
+.hero-content p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--farbe-papierweiss);
+}
+
+.hero-content a {
+  background-color: var(--farbe-neongruen);
+  color: var(--farbe-tiefschwarz);
+  padding: 15px 26px;
+  width: fit-content;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.hero-content a:hover {
+  opacity: 0.9;
+}
+
+
+/****** PAGES *******/
+
+
+/****** FOOTER *******/
+
+footer{
+  background-color: var(--farbe-tiefschwarz);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 72px 64px;
+  gap: 14px;
+}
+
+.footer-content-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-content-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer-content-logo p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--farbe-neongruen);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer-nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--farbe-papierweiss);
+  text-decoration: none;
+}
+
+.footer-nav a:hover{
+  color: var(--farbe-neongruen);
+}
+
+.footer-content-social-media {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-content-social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-impressum{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 64px 28px 64px;
+  border-top: 1px solid var(--farbe-rahmen);
+  margin-top: 55px;
+  padding-top: 25px;
+}
+
+.footer-impressum p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--farbe-sekundaer);
+}
+
+.footer-impressum a {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--farbe-papierweiss);
+  text-decoration: none;
+}
+
+/****** MEDIA QUERIES *******/
+/****** All Tablet-Screens 600 - 1000px *******/
+@media screen and (max-width: 1000px) {
+  /****** Tablet spezifischer Code *******/
+
+}
+
+/****** All Mobile Screens 300 - 768px *******/
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+    min-height: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .navigation {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .footer-impressum {
+    flex-direction: column;
+    padding: 28px 20px 28px 20px;
+    margin-top: 24px;
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-1 {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .section-1-left h2 {
+    font-size: 32px;
+  }
+}
+
+/****** BURGER-MENÜ OFFEN *******/
+@media screen and (max-width: 768px) {
+  header.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--farbe-tiefschwarz);
+    z-index: 100;
+  }
+
+  header.active .nav-links a {
+    font-size: 24px;
+  }
+
+  header.active .menu-icon .open {
+    display: none;
+  }
+
+  header.active .menu-icon .close {
+    display: block;
+  }
+
+  .menu-icon {
+    position: relative;
+    z-index: 101;
+  }
+}

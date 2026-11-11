@@ -1,0 +1,5 @@
+<svg viewBox="0 0 330 64" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(0 2)"><path d="M4 52 L26 14 L40 38 L48 26 L68 52 Z" fill="#D6FF45"/><path d="M26 14 L33 26 L22 26 Z" fill="#F0F0EA"/></g>
+  <text x="88" y="30" font-family="'Oswald','Bebas Neue','Arial Narrow',Arial,sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#F0F0EA">ULTRA</text>
+  <text x="88" y="56" font-family="'Oswald','Bebas Neue','Arial Narrow',Arial,sans-serif" font-size="22" font-weight="400" letter-spacing="9" fill="#A66B43">RUNNING</text>
+</svg>

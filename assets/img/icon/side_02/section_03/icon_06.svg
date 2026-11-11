@@ -1,0 +1,10 @@
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .badge-circle { fill: #15191C; stroke: #D6FF45; stroke-width: 15; }
+      .badge-text { font-family: Arial, sans-serif; font-size: 48px; font-weight: bold; fill: #D6FF45; text-anchor: middle; dominant-baseline: central; }
+    </style>
+  </defs>
+  <circle cx="250" cy="250" r="235" class="badge-circle"/>
+  <text x="250" y="250" class="badge-text">ROAD ULTRA</text>
+</svg>

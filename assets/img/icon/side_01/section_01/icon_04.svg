@@ -1,0 +1,11 @@
+<svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="500" cy="500" r="480" fill="#161B1F"/>
+  <g transform="translate(500 500) scale(1.042) translate(-450 -470)">
+    <circle cx="450" cy="250" r="60" fill="#D6FF45"/>
+  <line x1="450" y1="310" x2="450" y2="550" stroke="#D6FF45" stroke-width="38.388" stroke-linecap="round"/>
+  <line x1="450" y1="380" x2="300" y2="280" stroke="#D6FF45" stroke-width="38.388" stroke-linecap="round"/>
+  <line x1="450" y1="380" x2="600" y2="450" stroke="#D6FF45" stroke-width="38.388" stroke-linecap="round"/>
+  <line x1="450" y1="550" x2="350" y2="750" stroke="#D6FF45" stroke-width="38.388" stroke-linecap="round"/>
+  <line x1="450" y1="550" x2="600" y2="700" stroke="#D6FF45" stroke-width="38.388" stroke-linecap="round"/>
+  </g>
+</svg>

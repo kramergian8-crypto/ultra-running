@@ -1,0 +1,171 @@
+.section-1 {
+  padding: var(--abstand-section) var(--seitenrand);
+  background-color: var(--farbe-anthrazit);
+}
+
+.section-1 h1::before {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  background-color: var(--farbe-neongruen);
+  margin-bottom: 16px;
+}
+
+.section-1 h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px var(--seitenrand) var(--abstand-section);
+  background-color: var(--farbe-anthrazit);
+}
+
+.section-2 article {
+  padding: 24px;
+  border: 1px solid var(--farbe-rahmen);
+  border-radius: var(--radius);
+}
+
+.section-2 h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--farbe-neongruen);
+  margin-bottom: 16px;
+}
+
+.section-2 article > img {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.section-2 p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.section-2 ul {
+  padding-left: 20px;
+}
+
+.section-2 li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.section-2 a {
+  color: var(--farbe-neongruen);
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+section.kontakt {
+  padding: 0 var(--seitenrand) var(--abstand-section);
+  background-color: var(--farbe-anthrazit);
+}
+
+article.kontakt {
+  padding: 24px;
+  border: 1px solid var(--farbe-rahmen);
+  border-radius: var(--radius);
+}
+
+article.kontakt h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--farbe-neongruen);
+  margin-bottom: 16px;
+}
+
+article.kontakt > p {
+  font-size: 14px;
+  color: var(--farbe-sekundaer);
+  margin-bottom: 16px;
+}
+
+.feld {
+  margin-bottom: 16px;
+}
+
+.feld label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.feld input,
+.feld textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--farbe-papierweiss);
+  background-color: var(--farbe-anthrazit-hell);
+  border-radius: 6px;
+}
+
+.feld input::placeholder,
+.feld textarea::placeholder {
+  color: var(--farbe-sekundaer);
+}
+
+.feld textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.feld input:focus,
+.feld textarea:focus {
+  outline: 2px solid var(--farbe-neongruen);
+}
+
+form button {
+  padding: 14px 28px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--farbe-tiefschwarz);
+  background-color: var(--farbe-neongruen);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .section-1 {
+    padding: 40px 20px;
+  }
+
+  .section-1 h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-2 {
+    padding: 24px 20px 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.kontakt {
+    padding: 0 20px 40px;
+  }
+
+  article.kontakt {
+    padding: 20px;
+  }
+}
